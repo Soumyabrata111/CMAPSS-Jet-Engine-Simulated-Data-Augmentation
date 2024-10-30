@@ -1,13 +1,13 @@
 # CMAPSS Jet Engine RUL Prediction
 
-This repository provides a pipeline for predicting the Remaining Useful Life (RUL) of jet engines using the CMAPSS dataset, based on sensor data and cycle time.
+This repository provides a pipeline for predicting jet engines' Remaining Useful Life (RUL) using the CMAPSS dataset based on sensor data and cycle time.
 
 ## Overview
 
 The code covers the following steps:
 
 1. **Data Preprocessing**
-   - Calculates Fisher scores for each sensor using the first and last 50 cycles to identify the sensors most relevant to engine degradation.
+   - Calculates Fisher scores for each sensor using the first and last 50 cycles to identify the sensors most relevant to engine degradation. For calculating the Fisher score, only the training dataset has been considered, as that is the most complete dataset, i.e., it contains Run-to-Failure data for all the sensors for each engine.
    - Selects the top 6 sensors based on Fisher scores for RUL prediction.
 
 2. **RUL Calculation**
