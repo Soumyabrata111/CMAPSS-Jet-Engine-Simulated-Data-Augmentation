@@ -14,7 +14,7 @@ The code covers the following steps:
    - Calculates RUL for each engine in the training set based on its maximum cycle count.
 
 3. **Model Training**
-   - Trains a Linear Regression model on selected sensor features.
+   - Trains a Linear Regression model on selected sensor features (absolute value, EMA).
    - Scales features using `StandardScaler` and evaluates the model using Root Mean Squared Error (RMSE).
 
 4. **RUL Prediction**
