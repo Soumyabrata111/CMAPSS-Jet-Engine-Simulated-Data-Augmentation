@@ -16,6 +16,10 @@ The code covers the following steps:
 3. **Model Training**
    - Trains a Linear Regression model on selected sensor features (absolute value, EMA).
    - Scales features using `StandardScaler` and evaluates the model using Root Mean Squared Error (RMSE).
+   - Models evaluated so far:
+      - Linear Regression
+      - Decision Tree Regressor
+      - Random Forest Regressor
 
 4. **RUL Prediction**
    - Applies the model to the last cycle of each engine in the test set to predict RUL.
